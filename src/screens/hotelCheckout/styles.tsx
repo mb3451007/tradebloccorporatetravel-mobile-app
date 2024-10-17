@@ -1,0 +1,420 @@
+/* eslint-disable prettier/prettier */
+import {Fonts} from '@src/assets';
+import colors from '@src/constants/colors';
+import {Platform, StyleSheet} from 'react-native';
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+export default StyleSheet.create({
+  mainContainerStyle: {
+    flex: 1,
+    // backgroundColor:colors.color_fff,
+  },
+  keyBoardAwareStyle: {
+    backgroundColor: colors.color_fff,
+    // flexGrow: 1,
+  },
+  scrollViewContent: {
+    backgroundColor: '#fff',
+    marginBottom: responsiveHeight(10),
+  },
+  checkOutHeaderContainerStyle: {
+    position: 'absolute',
+    width: responsiveWidth(100),
+    alignItems: 'center',
+  },
+  checkOutBackGroundImageStyle: {
+    height: responsiveHeight(27),
+    width: responsiveWidth(100),
+    alignSelf: 'center',
+    borderBottomLeftRadius: responsiveWidth(4),
+    borderBottomRightRadius: responsiveWidth(4),
+  },
+  iosPlatformFlightBackground: {
+    height: responsiveHeight(31),
+  },
+  checkOutTicketContainer: {
+    position: 'absolute',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  headerLeftIconStyle: {
+    height: 35,
+    width: 35,
+  },
+  headerLabelStyle: {
+    color: colors.color_fff,
+    fontWeight: '500',
+    fontSize: 16,
+    flexShrink: 0,
+  },
+  stepfromStyle: {
+    height: responsiveWidth(8),
+    width: responsiveWidth(36.1),
+  },
+
+  roomsContainer: {
+    marginTop: responsiveHeight(-13),
+  },
+  checkOutTicketStyle: {
+    marginBottom: responsiveHeight(2),
+    backgroundColor: colors.color_fff,
+    borderTopLeftRadius: responsiveWidth(5),
+    borderTopRightRadius: responsiveWidth(5),
+    alignSelf: 'center',
+    width: responsiveWidth(90),
+    margin: responsiveHeight(1),
+    elevation: 2,
+    shadowOpacity: 0.3,
+    shadowOffset: {
+      width: 0.3,
+      height: 0.3,
+    },
+    padding: responsiveHeight(1),
+  },
+  roomsIcon: {
+    right: responsiveHeight(2),
+  },
+  nodataTextStyle:{
+color:colors.color_000,
+marginLeft: responsiveHeight(1),
+marginTop: responsiveHeight(-2),
+marginBottom: responsiveHeight(1),
+  },
+  childContainer_1: {
+    backgroundColor: colors.color_fff,
+    borderRadius: responsiveWidth(8),
+    alignSelf: 'center',
+    width: responsiveWidth(95),
+    // margin: responsiveHeight(2),
+    elevation: 1,
+    padding: responsiveHeight(1),
+  },
+  childDetailsStyle: {
+    marginTop: responsiveHeight(2),
+    // backgroundColor:'red',
+    marginBottom: responsiveHeight(10),
+  },
+  checkOutDetailedLineStyle: {
+    width: responsiveWidth(100),
+    marginTop: responsiveHeight(3),
+  },
+  roundViewStyles: {
+    backgroundColor: 'white',
+    borderWidth: 0.5,
+    borderColor: colors.color_EBEBEB,
+  },
+  ticketAirlinesContainer: {
+    flexDirection: 'row',
+    width: responsiveWidth(60),
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  tabBarStyle: {
+    height: responsiveHeight(9),
+    width: responsiveWidth(95),
+    alignSelf: 'center',
+    marginTop: 5,
+    marginHorizontal: Platform.OS === 'android' ? 0 : 10,
+    marginBottom: Platform.OS === 'android' ? responsiveHeight(0.5) : 20,
+    borderRadius: 25,
+    backgroundColor: colors.color_fff,
+    shadowColor: colors.color_000,
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.17,
+    shadowRadius: 3.05,
+    elevation: 4,
+  },
+  userDetailsContainerStyle: {
+    width: responsiveWidth(90),
+    borderWidth: 1,
+    borderColor: colors.color_F6F6F6,
+    borderRadius: 16,
+    alignSelf: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    marginVertical: 10,
+  },
+  priceContainerStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  priceTextStyle: {
+    color: colors.color_000,
+    fontSize: 16,
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontWeight: '500',
+  },
+  nonRefTextStyle: {
+    backgroundColor: colors.color_FFD4D4,
+    height: 25,
+    width: 113,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    color: colors.color_FF4D4D,
+    borderRadius: 5,
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    letterSpacing: 0.26,
+    fontSize: 14,
+  },
+  checkOutLineStyle: {
+    width: responsiveWidth(82),
+    marginTop: 10,
+  },
+  genderContainerStyle: {
+    flexDirection: 'row',
+    width: responsiveWidth(82),
+    marginTop: 20,
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  UnCheckedView: {
+    width: 20,
+    height: 20,
+    borderWidth: 1,
+    borderRadius: 5,
+    borderColor: colors.color_BBBBBB,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  checkedView: {
+    width: 12,
+    height: 12,
+    backgroundColor: colors.color_0094E6,
+    borderRadius: 3,
+  },
+
+  genderButtonStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    width: responsiveWidth(20),
+  },
+  seatMapButtonContainerStyle: {
+    alignSelf: 'flex-end',
+    marginRight: responsiveWidth(5),
+  },
+  seatMapButtonStyle: {
+    width: 81,
+    height: 31,
+    borderRadius: 7,
+    alignSelf: 'flex-end',
+  },
+  seatMapButtonLabelStyle: {
+    fontSize: 13,
+  },
+  genderTextStyle: {
+    color: colors.color_000,
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontSize: 14,
+    letterSpacing: 0.26,
+    fontWeight: '400',
+    textTransform: 'capitalize',
+  },
+  calendarStyle: {
+    height: responsiveWidth(4),
+    width: responsiveWidth(4),
+  },
+  flightSessionContainerStyle: {
+    height: 48,
+    width: responsiveWidth(85),
+    alignSelf: 'center',
+    borderWidth: 1,
+    margin: 10,
+    borderRadius: 10,
+    borderColor: colors.color_FF4D4D,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  warningImageContainerStyle: {
+    height: 44,
+    width: 50,
+    backgroundColor: colors.color_FF7A7A,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    opacity: 0.4,
+  },
+  warningImageStyle: {
+    opacity: 1,
+  },
+  unfortunatelySessionTextStyle: {
+    color: colors.color_EC3F3F,
+    marginRight: 10,
+  },
+  priceDetailsContainerStyle: {
+    width: responsiveWidth(100),
+    backgroundColor: colors.color_fff,
+    height: responsiveHeight(25),
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
+    borderWidth: 0.5,
+    elevation: 10,
+  },
+  priceSubContainerStyle: {
+    flexDirection: 'row',
+    width: responsiveWidth(90),
+    alignSelf: 'center',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: 55,
+  },
+  bottomPriceTextStyle: {
+    color: colors.color_000,
+    fontWeight: '500',
+    letterSpacing: 0.28,
+    fontSize: 14,
+    fontFamily: Fonts.ROBOTO_REGULAR,
+  },
+  priceNextButtonStyle: {
+    width: responsiveWidth(40),
+    height: 43,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  mainPriceTextStyle: {
+    fontSize: 18,
+    color: colors.color_0094E6,
+    fontWeight: '600',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+  },
+  mainPriceSubTextStyle: {
+    fontSize: 13,
+    color: colors.color_B2B2B2,
+  },
+  mainPriceContainer: {
+    alignItems: 'center',
+  },
+  seatMapLoaderStyle: {
+    marginRight: 15,
+  },
+  // refundableView: {
+  //   flexDirection: 'row',
+  //   justifyContent: 'space-between',
+  //   margin: 10,
+  // },
+  adultTxt: {
+    fontSize: 16,
+    fontWeight: '500',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    color: colors.color_000,
+  },
+  informationTittle: {
+    fontSize: 13,
+    fontWeight: '400',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    color: colors.color_888888,
+  },
+  line: {
+    height: 0.5,
+    backgroundColor: colors.color_707070,
+    width: '100%',
+  },
+  errTxt: {
+    color: 'red',
+  },
+  calenderPickerStyle: {
+    elevation: 0.5,
+  },
+  selectedRangeDateStyle: {
+    height: responsiveWidth(8),
+    width: responsiveWidth(8),
+    borderRadius: responsiveWidth(5),
+    backgroundColor: colors.color_0094E6,
+  },
+  selectedRangeTextStyle: {
+    color: colors.color_fff,
+  },
+  todayDateStyle: {
+    color: colors.color_0094E6,
+  },
+  rangeStyle: {
+    height: responsiveWidth(6),
+    width: responsiveWidth(6),
+    backgroundColor: colors.color_skyblue,
+    borderRadius: responsiveWidth(5),
+  },
+  contentContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    //  marginHorizontal:5,
+    padding: 5,
+  },
+  contentTextStyle: {
+    color: colors.color_000,
+    fontSize: 14,
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontWeight: '400',
+    letterSpacing: 0.07,
+    marginHorizontal: 10,
+  },
+  radioStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: responsiveWidth(35),
+    height: responsiveWidth(11),
+    borderRadius: responsiveWidth(10),
+    borderWidth: responsiveWidth(0.2),
+    borderColor: colors.color_E9E9E9,
+    marginLeft: responsiveWidth(1.5),
+  },
+  firstView: {
+    marginHorizontal: responsiveHeight(2),
+  },
+  secondList: {
+    position: 'absolute',
+    marginTop: responsiveHeight(20),
+  },
+  secondViewDiff: {
+    // marginTop: 20,
+    // marginHorizontal: 10,
+    backgroundColor: colors.color_fff,
+    // borderWidth:2,
+    padding: 10,
+    // elevation:1,
+    flex: 1,
+  },
+  refundableView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+  },
+  dropDownTxt: {
+    fontWeight: '500',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontSize: 16,
+    color: colors.color_000000,
+    width: responsiveWidth(80),
+  },
+  textInputIosStyle: {
+    bottom: -10,
+    marginLeft: Platform.OS === 'ios' ? 10 : -10,
+  },
+  textInputIosSecStyle: {
+    bottom: -15,
+  },
+  mainview: {flex: 1},
+  customLoaderStyle: {
+    backgroundColor: colors.color_whiteTransparent,
+  },
+  errorMsg: {color: 'red', fontSize: 16},
+  countryFlagStyle: {
+    marginTop: 15,
+    marginRight: responsiveWidth(-2),
+  },
+  infoTxt: {
+    marginHorizontal: 10,
+    marginBottom: 10,
+    marginTop: -10,
+    color: colors.color_888888,
+  },
+  textInputCustomStyle: {
+    marginLeft: -10,
+  },
+});

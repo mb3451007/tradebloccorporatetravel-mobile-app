@@ -1,0 +1,188 @@
+/* eslint-disable prettier/prettier */
+import {Fonts} from '@src/assets';
+import colors from '@src/constants/colors';
+import {Platform, StyleSheet} from 'react-native';
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
+export default StyleSheet.create({
+  containerStyle: {backgroundColor: 'white', flex: 1},
+  contentContainerStyle: {
+    // flex: 1,
+    backgroundColor: colors.color_fff,
+  },
+  headerLeftIconStyle: {
+    tintColor: colors.color_000,
+    height: responsiveWidth(9),
+    width: responsiveWidth(9),
+  },
+  headerLabelStyle: {
+    color: colors.color_000,
+    fontWeight: '500',
+    fontSize: responsiveFontSize(2),
+    fontFamily: Fonts.ROBOTO_REGULAR,
+  },
+  profileDetailsContainerStyle: {
+    // height: responsiveHeight(25),
+    width: responsiveWidth(80),
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  profileImageStyle: {
+    // width: responsiveWidth(30),
+    // height: responsiveWidth(30),
+    // borderRadius: responsiveWidth(15),
+  },
+  emailTextStyle: {
+    color: colors.color_000,
+    fontWeight: '400',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontSize: responsiveFontSize(1.8),
+  },
+  paymentStatus:{
+    color: colors.color_0094E6,
+    fontWeight: '800',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontSize: responsiveFontSize(2),
+  },
+  paymentTextStyle: {
+    color: colors.color_8A8A8A,
+    fontSize: responsiveFontSize(1.5),
+    fontWeight: '300',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    marginTop: 5,
+  },
+  travelDetailsContainer:{
+    backgroundColor: colors.color_F9F9F9,
+    width: responsiveWidth(90),
+    alignSelf: 'center',
+    borderRadius: 15,
+    padding:10,
+    marginTop:20,
+  },
+  detailsContainerStyle: {
+    height: responsiveHeight(6.5),
+    backgroundColor: colors.color_F9F9F9,
+    width: responsiveWidth(90),
+    alignSelf: 'center',
+    borderRadius: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  },
+  deatilsButtonStyle: {
+    flexDirection: 'row',
+    width: responsiveWidth(42),
+    height: responsiveHeight(5.5),
+    borderRadius: 5,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  buttonTextStyle: {
+    fontSize: responsiveFontSize(1.8),
+    fontWeight: '400',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+  },
+  mainContainerCustomStyle: {
+    marginTop: 20,
+  },
+  countryCityContainerStyle: {
+    flexDirection: 'row',
+    width: responsiveWidth(84),
+    alignSelf: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  countryCitySubContainerStyle: {
+    borderWidth: 1,
+    width: responsiveWidth(38),
+    height: responsiveHeight(8),
+    borderRadius: 9,
+    borderColor: colors.color_EEEEEE,
+    paddingHorizontal: responsiveWidth(2),
+    justifyContent: 'space-evenly',
+  },
+  countryCityTextStyle: {
+    fontSize: 14,
+    color: colors.color_8B8B8B,
+    marginTop: responsiveHeight(0.5),
+  },
+  countryContainerStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  textInputsStyle: {
+    fontSize: responsiveFontSize(2),
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    bottom: Platform.OS === 'ios' ? -10 : null,
+    color: colors.color_000,
+    flex: 1,
+    height: responsiveHeight(4),
+    marginLeft: responsiveWidth(1),
+    // marginVertical: responsiveHeight(-1.0),
+    marginBottom: responsiveHeight(-1.0),
+  },
+  secondTextInput: {
+    flex: 1,
+  },
+  travelBookingContainerStyle: {
+    backgroundColor: colors.color_F9F9F9,
+    width: responsiveWidth(90),
+    alignSelf: 'center',
+    marginVertical: responsiveHeight(2),
+  },
+  bookingTextContainerStyle: {
+    width: responsiveWidth(90),
+    height: responsiveHeight(7),
+    backgroundColor: colors.color_fff,
+    alignSelf: 'center',
+    elevation: 0.5,
+    margin: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: responsiveWidth(2),
+    alignItems: 'flex-end',
+  },
+  travelBookingTouchableContainerStyle: {
+    width: responsiveWidth(29),
+    height: responsiveHeight(6),
+    borderTopLeftRadius: 13,
+    borderTopRightRadius: 13,
+    justifyContent: 'space-between',
+  },
+  travelImgTextContainerStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    height: responsiveHeight(5),
+    width: responsiveWidth(20),
+    alignSelf: 'center',
+  },
+  bottomSlideViewStyle: {
+    width: responsiveWidth(15),
+    borderWidth: 3,
+    borderColor: colors.color_0094E6,
+    alignSelf: 'center',
+    borderRadius: 15,
+  },
+  bookingTextStyle: {
+    textTransform: 'capitalize',
+    color: colors.color_000,
+    fontWeight: '500',
+    fontFamily: Fonts.ROBOTO_REGULAR,
+    fontSize: responsiveFontSize(1.8),
+  },
+  carBookingDetailContainerStyle: {
+    height: responsiveHeight(20),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  comingSoonTextStyle: {
+    color: colors.color_000,
+    fontWeight: '500',
+  },
+});

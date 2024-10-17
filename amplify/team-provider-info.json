@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-travelclubiq-dev-151341-authRole",
+      "UnauthRoleArn": "arn:aws:iam::542721654433:role/amplify-travelclubiq-dev-151341-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::542721654433:role/amplify-travelclubiq-dev-151341-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-travelclubiq-dev-151341-deployment",
+      "UnauthRoleName": "amplify-travelclubiq-dev-151341-unauthRole",
+      "StackName": "amplify-travelclubiq-dev-151341",
+      "StackId": "arn:aws:cloudformation:us-east-1:542721654433:stack/amplify-travelclubiq-dev-151341/048f0d70-e055-11ee-b2ab-0e0a5dfbcf15",
+      "AmplifyAppId": "d26oc4z3gc71hn"
+    },
+    "categories": {
+      "auth": {
+        "travelclubiq4fb7199e": {}
+      }
+    }
+  }
+}
