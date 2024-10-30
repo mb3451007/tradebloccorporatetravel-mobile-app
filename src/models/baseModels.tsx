@@ -19,8 +19,9 @@ const getLocationsMethodCall = (params: any) => {
     `${BASE_URL}${Endpoints.flightData_endPont}term=${params.term}&locale=${params.locale}&location_types=${params.city}&location_types=${params.airport}&active_only=${params.activeOnly}&sort=${params.sort}`,
     '------------------Here-------------------',
   );
+  let paramsTerm = params.term.toLowerCase();
   return GET(
-    `${Endpoints.flightData_endPont}term=${params.term}&locale=${params.locale}&location_types=${params.city}&location_types=${params.airport}&active_only=${params.activeOnly}&sort=${params.sort}`,
+    `${Endpoints.flightData_endPont}term=${paramsTerm}&locale=${params.locale}&location_types=${params.city}&location_types=${params.airport}&active_only=${params.activeOnly}&sort=${params.sort}`,
   );
 };
 

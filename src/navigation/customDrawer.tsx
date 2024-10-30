@@ -1,13 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
-import {
-  SafeAreaView,
-  View,
-  Image,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
+import {SafeAreaView, View, Image, Text, TouchableOpacity} from 'react-native';
 import {DrawerItem, useDrawerStatus} from '@react-navigation/drawer';
 import commonStyles from '@src/utility/commonStyles';
 import {Icons, Images} from '@src/assets';
@@ -16,9 +10,9 @@ import colors from '@src/constants/colors';
 import navigationConstants from '@src/constants/navigationConstants';
 import {useNavigation, DrawerActions} from '@react-navigation/native';
 import {navigate} from './navigationMethods';
-import { signOut } from 'aws-amplify/auth';
-import { useDispatch } from 'react-redux';
-import { awsResponse } from '@src/screens/login/slice/awsLoginSlice';
+import {signOut} from 'aws-amplify/auth';
+import {useDispatch} from 'react-redux';
+import {awsResponse} from '@src/screens/login/slice/awsLoginSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // CUSTOM SIDE DRAWER..
@@ -82,7 +76,7 @@ const CustomSideBar = () => {
           nav.dispatch(DrawerActions.closeDrawer());
           navigate(navigationConstants.SIGN_IN_UP);
           // navigate(navigationConstants.DRAWER_PROFILE);
-          // Alert.alert('In Progress');
+          // Alert.alert('In Progress'); DRAWER_BLOG
         }}
       />
       <DrawerItem
@@ -161,7 +155,10 @@ const CustomSideBar = () => {
         label={({focused}) => lables(focused, navigationConstants.DRAWER_BLOG)}
         activeBackgroundColor={colors.color_0094E6}
         style={styles.drawerBorderStyle}
-        onPress={() => {}}
+        onPress={() => {
+          nav.dispatch(DrawerActions.closeDrawer());
+          navigate(navigationConstants.BLOG);
+        }}
       />
       <DrawerItem
         icon={({focused}) => (
@@ -203,7 +200,7 @@ const CustomSideBar = () => {
         style={styles.drawerBorderStyle}
         onPress={() => {}}
       />
-       <DrawerItem
+      <DrawerItem
         icon={({focused}) => (
           <View style={styles.drawerIconStyle}>
             <Image
@@ -216,15 +213,13 @@ const CustomSideBar = () => {
             />
           </View>
         )}
-        label={({focused}) =>
-          lables(focused, 'Sign Out')
-        }
+        label={({focused}) => lables(focused, 'Sign Out')}
         activeBackgroundColor={colors.color_0094E6}
         style={styles.drawerBorderStyle}
         onPress={async () => {
-            await signOut();
-            dispatch(awsResponse(false));
-            AsyncStorage.clear();
+          await signOut();
+          dispatch(awsResponse(false));
+          AsyncStorage.clear();
         }}
       />
       {/* </DrawerContentScrollView> */}

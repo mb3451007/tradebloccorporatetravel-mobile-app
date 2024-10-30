@@ -136,7 +136,7 @@ export const Icons = {
   passport: require('../assets/images/passport.png'),
   explore: require('../assets/images/explore.png'),
   blog_Header: require('../assets/images/blogHeader.png'),
-  travelClub: require('../assets/images/travelClub.png'),
+  travelClub: require('../assets/images/corporateTravelLogo.png'),
   noBlog: require('../assets/images/noBlog.jpg'),
   carBlueCheckBg: require('../assets/images/carBlueCheckBg.png'),
   carRightImg: require('../assets/images/carRightImg.png'),

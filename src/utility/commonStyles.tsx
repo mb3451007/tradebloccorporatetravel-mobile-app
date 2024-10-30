@@ -54,7 +54,7 @@ export default StyleSheet.create({
   },
   travelClubTextContainer: {
     backgroundColor: colors.color_transpShadow,
-    width: responsiveWidth(32),
+    width: responsiveWidth(38),
     height: responsiveHeight(6),
     borderRadius: responsiveWidth(5),
     justifyContent: 'center',

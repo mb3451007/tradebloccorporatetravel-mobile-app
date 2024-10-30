@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import colors from '@src/constants/colors';
-import { Platform, StyleSheet } from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import {
   responsiveFontSize,
   responsiveHeight,
@@ -72,12 +72,12 @@ export default StyleSheet.create({
     shadowRadius: 3.05,
     elevation: 4,
   },
-  linearGradientStyle: { height: responsiveHeight(25), borderRadius: 15 },
+  linearGradientStyle: {height: responsiveHeight(25), borderRadius: 15},
   travelClubImgStyle: {
     alignSelf: 'center',
     marginTop: responsiveHeight(4),
-    height: responsiveHeight(2),
-    width: responsiveWidth(30),
+    height: responsiveHeight(10),
+    width: responsiveWidth(45),
   },
   iosBlogHeaderStyle: {
     marginTop: responsiveHeight(-1),
